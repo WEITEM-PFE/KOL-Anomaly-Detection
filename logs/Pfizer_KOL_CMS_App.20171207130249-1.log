@@ -1,0 +1,34 @@
+2017-12-07 13:02:49,814 - teradata.udaexec - INFO - Initializing UdaExec...
+2017-12-07 13:02:49,841 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\Documents\\GBI\\HCPs\\KOL Anomaly Detection\\udaexec.ini: Not Found']
+2017-12-07 13:02:49,852 - teradata.udaexec - INFO - No previous run number found as C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\.runNumber does not exist. Initializing run number to 1
+2017-12-07 13:02:49,859 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2017-12-07 13:02:49,866 - teradata.udaexec - INFO - Removed 0 log files.
+2017-12-07 13:02:50,133 - teradata.udaexec - INFO - Checkpoint file not found: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\Pfizer_KOL_CMS_App.checkpoint
+2017-12-07 13:02:50,133 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2017-12-07 13:02:50,148 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: Pfizer_KOL_CMS_App
+ *          Version: 1.0
+ *       Run Number: 20171207130249-1
+ *             Host: AMRL20FEP16EXDT
+ *         Platform: Windows-10-10.0.10586-SP0
+ *          OS User: WEITEM
+ *   Python Version: 3.5.4
+ *  Python Compiler: MSC v.1900 64 bit (AMD64)
+ *     Python Build: ('default', 'Nov  8 2017 14:34:30')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:\Program Files\Anaconda3\lib\site-packages\ipykernel\__main__.py
+ *      Working Dir: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection
+ *      Git Version: git version 2.14.1.windows.1
+ *     Git Revision: 30c767f
+ *        Git Dirty: True [ M xoxoRoyFleischmann_WebScraping.ipynb,?? .ipynb_checkpoints/,?? .runNumber,?? logs/]
+ *          Log Dir: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\logs
+ *         Log File: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\logs\Pfizer_KOL_CMS_App.20171207130249-1.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\Documents\\GBI\\HCPs\\KOL Anomaly Detection\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=Pfizer_KOL_CMS_App;Version=1.0;JobID=20171207130249-1;ClientUser=WEITEM;Production=False;udaAppLogFile=C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\logs\Pfizer_KOL_CMS_App.20171207130249-1.log;gitRevision=30c767f;gitDirty=True;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2017-12-07 13:02:52,082 - teradata.udaexec - INFO - Creating connection: {'password': 'XXXXXX', 'method': 'odbc', 'system': 'amrndhp3', 'username': 'WEITEM'}
+2017-12-07 13:02:52,127 - teradata.tdodbc - INFO - Available drivers: SQL Server, Teradata, SQL Server Native Client 10.0, PostgreSQL ANSI(x64), PostgreSQL Unicode(x64), Amazon Redshift (x64), MySQL ODBC 5.3 ANSI Driver, MySQL ODBC 5.3 Unicode Driver
+2017-12-07 13:02:57,125 - teradata.udaexec - INFO - Connection successful. Duration: 5.040 seconds. Details: {'password': 'XXXXXX', 'method': 'odbc', 'system': 'amrndhp3', 'username': 'WEITEM'}
+2017-12-07 13:02:59,612 - teradata.udaexec - INFO - Query Successful. Duration: 0.374 seconds, Rows: 119402, Query: SELECT * FROM HVAD_TEAM_T.mw_cms_kol_all_2k17
+2017-12-07 13:03:23,031 - teradata.udaexec - INFO - Query Successful. Duration: 0.307 seconds, Rows: 12, Query: SELECT ColumnName FROM dbc.ColumnsV WHERE DatabaseName='HVAD_TEAM_T' AND TableName='mw_cms_kol_all_2k17' ORDER BY ColumnId

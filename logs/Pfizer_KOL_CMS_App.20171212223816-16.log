@@ -1,0 +1,148 @@
+2017-12-12 22:38:16,419 - teradata.udaexec - INFO - Initializing UdaExec...
+2017-12-12 22:38:16,421 - teradata.udaexec - INFO - Reading config files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\Documents\\GBI\\HCPs\\KOL Anomaly Detection\\udaexec.ini: Not Found']
+2017-12-12 22:38:16,426 - teradata.udaexec - INFO - Found run number file: "C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\.runNumber"
+2017-12-12 22:38:16,429 - teradata.udaexec - INFO - Cleaning up log files older than 90 days.
+2017-12-12 22:38:16,432 - teradata.udaexec - INFO - Removed 0 log files.
+2017-12-12 22:38:16,733 - teradata.udaexec - INFO - Checkpoint file not found: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\Pfizer_KOL_CMS_App.checkpoint
+2017-12-12 22:38:16,736 - teradata.udaexec - INFO - No previous checkpoint found, executing from beginning...
+2017-12-12 22:38:16,738 - teradata.udaexec - INFO - Execution Details:
+/********************************************************************************
+ * Application Name: Pfizer_KOL_CMS_App
+ *          Version: 1.0
+ *       Run Number: 20171212223816-16
+ *             Host: AMRL20FEP16EXDT
+ *         Platform: Windows-10-10.0.10586-SP0
+ *          OS User: WEITEM
+ *   Python Version: 3.5.4
+ *  Python Compiler: MSC v.1900 64 bit (AMD64)
+ *     Python Build: ('default', 'Nov  8 2017 14:34:30')
+ *  UdaExec Version: 15.10.0.21
+ *     Program Name: C:\Program Files\Anaconda3\lib\site-packages\ipykernel\__main__.py
+ *      Working Dir: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection
+ *      Git Version: git version 2.14.1.windows.1
+ *     Git Revision: dfd3012
+ *        Git Dirty: True [ M xoxoRoyFlesichman_Teradata.ipynb,?? .ipynb_checkpoints/,?? .runNumber,?? logs/]
+ *          Log Dir: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\logs
+ *         Log File: C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\logs\Pfizer_KOL_CMS_App.20171212223816-16.log
+ *     Config Files: ['C:\\etc\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\udaexec.ini: Not Found', 'C:\\Users\\WEITEM\\Documents\\GBI\\HCPs\\KOL Anomaly Detection\\udaexec.ini: Not Found']
+ *      Query Bands: ApplicationName=Pfizer_KOL_CMS_App;Version=1.0;JobID=20171212223816-16;ClientUser=WEITEM;Production=False;udaAppLogFile=C:\Users\WEITEM\Documents\GBI\HCPs\KOL Anomaly Detection\logs\Pfizer_KOL_CMS_App.20171212223816-16.log;gitRevision=dfd3012;gitDirty=True;UtilityName=PyTd;UtilityVersion=15.10.0.21
+********************************************************************************/
+2017-12-12 22:38:19,261 - teradata.udaexec - INFO - Creating connection: {'system': 'amrndhp3', 'method': 'odbc', 'username': 'WEITEM', 'password': 'XXXXXX'}
+2017-12-12 22:38:19,984 - teradata.udaexec - INFO - Connection successful. Duration: 0.720 seconds. Details: {'system': 'amrndhp3', 'method': 'odbc', 'username': 'WEITEM', 'password': 'XXXXXX'}
+2017-12-12 22:38:20,514 - teradata.udaexec - INFO - Query Successful. Duration: 0.240 seconds, Rows: 119402, Query: SELECT * FROM HVAD_TEAM_T.mw_cms_kol_all_2k17
+2017-12-12 22:39:03,898 - teradata.udaexec - INFO - Query Successful. Duration: 0.176 seconds, Rows: 12, Query: SELECT ColumnName FROM dbc.ColumnsV WHERE DatabaseName='HVAD_TEAM_T' AND TableName='mw_cms_kol_all_2k17' ORDER BY ColumnId
+2017-12-12 22:51:53,951 - tornado.general - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\ipkernel.py", line 199, in do_execute
+    shell.run_cell(code, store_history=store_history, silent=silent)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line 2653, in run_cell
+    cell = self.input_transformer_manager.transform_cell(raw_cell)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputsplitter.py", line 597, in transform_cell
+    self.push(cell)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputsplitter.py", line 641, in push
+    out = self.push_line(line)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputsplitter.py", line 668, in push_line
+    line = self.assemble_python_lines.push(line)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 164, in push
+    return self.output(tokens)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 183, in output
+    return self.reset()
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 174, in reset
+    self.reset_tokenizer()
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 134, in reset_tokenizer
+    self.tokenizer = generate_tokens(self.get_line)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\lib\site-packages\zmq\eventloop\zmqstream.py", line 414, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\lib\site-packages\tornado\stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\kernelbase.py", line 276, in dispatcher
+    return self.dispatch_shell(stream, msg)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\kernelbase.py", line 228, in dispatch_shell
+    handler(stream, idents, msg)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\kernelbase.py", line 391, in execute_request
+    user_expressions, allow_stdin)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\ipkernel.py", line 209, in do_execute
+    tb_list = traceback.format_exception(etype, evalue, tb)
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 117, in format_exception
+    type(value), value, tb, limit=limit).format(chain=chain))
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 474, in __init__
+    capture_locals=capture_locals)
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 358, in extract
+    f.line
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 282, in line
+    self._line = linecache.getline(self.filename, self.lineno).strip()
+  File "C:\Program Files\Anaconda3\lib\linecache.py", line 16, in getline
+    lines = getlines(filename, module_globals)
+  File "C:\Program Files\Anaconda3\lib\linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "C:\Program Files\Anaconda3\lib\linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "C:\Program Files\Anaconda3\lib\tokenize.py", line 454, in open
+    buffer = _builtin_open(filename, 'rb')
+KeyboardInterrupt
+2017-12-12 22:51:54,078 - tornado.general - ERROR - Uncaught exception, closing connection.
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\ipkernel.py", line 199, in do_execute
+    shell.run_cell(code, store_history=store_history, silent=silent)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\interactiveshell.py", line 2653, in run_cell
+    cell = self.input_transformer_manager.transform_cell(raw_cell)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputsplitter.py", line 597, in transform_cell
+    self.push(cell)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputsplitter.py", line 641, in push
+    out = self.push_line(line)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputsplitter.py", line 668, in push_line
+    line = self.assemble_python_lines.push(line)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 164, in push
+    return self.output(tokens)
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 183, in output
+    return self.reset()
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 174, in reset
+    self.reset_tokenizer()
+  File "C:\Program Files\Anaconda3\lib\site-packages\IPython\core\inputtransformer.py", line 134, in reset_tokenizer
+    self.tokenizer = generate_tokens(self.get_line)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Anaconda3\lib\site-packages\zmq\eventloop\zmqstream.py", line 440, in _handle_events
+    self._handle_recv()
+  File "C:\Program Files\Anaconda3\lib\site-packages\zmq\eventloop\zmqstream.py", line 472, in _handle_recv
+    self._run_callback(callback, msg)
+  File "C:\Program Files\Anaconda3\lib\site-packages\zmq\eventloop\zmqstream.py", line 414, in _run_callback
+    callback(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\lib\site-packages\tornado\stack_context.py", line 275, in null_wrapper
+    return fn(*args, **kwargs)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\kernelbase.py", line 276, in dispatcher
+    return self.dispatch_shell(stream, msg)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\kernelbase.py", line 228, in dispatch_shell
+    handler(stream, idents, msg)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\kernelbase.py", line 391, in execute_request
+    user_expressions, allow_stdin)
+  File "C:\Program Files\Anaconda3\lib\site-packages\ipykernel\ipkernel.py", line 209, in do_execute
+    tb_list = traceback.format_exception(etype, evalue, tb)
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 117, in format_exception
+    type(value), value, tb, limit=limit).format(chain=chain))
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 474, in __init__
+    capture_locals=capture_locals)
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 358, in extract
+    f.line
+  File "C:\Program Files\Anaconda3\lib\traceback.py", line 282, in line
+    self._line = linecache.getline(self.filename, self.lineno).strip()
+  File "C:\Program Files\Anaconda3\lib\linecache.py", line 16, in getline
+    lines = getlines(filename, module_globals)
+  File "C:\Program Files\Anaconda3\lib\linecache.py", line 47, in getlines
+    return updatecache(filename, module_globals)
+  File "C:\Program Files\Anaconda3\lib\linecache.py", line 136, in updatecache
+    with tokenize.open(fullname) as fp:
+  File "C:\Program Files\Anaconda3\lib\tokenize.py", line 454, in open
+    buffer = _builtin_open(filename, 'rb')
+KeyboardInterrupt
+2017-12-12 22:51:54,176 - teradata.udaexec - INFO - UdaExec exiting.
+2017-12-12 22:51:54,178 - teradata.tdodbc - WARNING - 1 open connections found on exit, attempting to close...
+2017-12-12 22:51:54,261 - teradata.udaexec - INFO - UdaExec exiting.
